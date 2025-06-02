@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+       <nav><ul>
+    <li> <a href="#">Home</a> </li>
+    <li><a href="">Projects</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Service</a></li>
+</ul></nav> 
+    </div>
+    </div>
+    <div class="container">
+      <div class="header-text">
+    <p>UI/UX Designer</p>
+    <h1>Hi, I'm <span>Misal Dhanuska</span>
+       <br>From Sri Lanka</h1>
+</div>  
+    </div>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="image-wrapper" id="my-image" src="images/aiease_1748765276929.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+              <h1 class="tab-title">About me</h1>
+              <p>I'm Misal Dhanuska, a dedicated UI/UX designer with a strong passion
+                 for creating visually appealing and user-friendly designs. I specialize 
+                 in using Figma to bring ideas to life, whether it's for mobile apps or 
+                 web interfaces. I focus on crafting responsive designs that work seamlessly
+                  across all devices. My goal is to deliver clean, modern, and effective user 
+                  experiences that not only look good but also feel intuitive.</p>
+          <div class="tab-links">
+  <p onclick="openTab(event,'skill')" class="tab-link active-link">Skills</p>
+  <p onclick="openTab(event,'experience')" class="tab-link">Experience</p>
+  <p onclick="openTab(event,'Education')" class="tab-link">Education</p>
+</div>
+          <div class="tab-contents active-tab" id="skill">
+            <ul>
+              <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+              <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+              <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>School</span><br>Desinging Web/App interfaces</li>
+              <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+              <li><span>developmets</span><br>Desinging Web/App interfaces</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>UI?UX</span><br>Desinging Web/App interfaces</li>
+              <li><span>Frot end</span><br>Desinging Web/App Frotend</li>
+              <li><span>SE</span><br>App interfaces</li>
+
+            </ul>
+          </div>
+                </div>
+        </div>
+    </div>
+  </div>  
+<script>
+var tabLinks = document.getElementsByClassName("tab-link");
+var tabContents = document.getElementsByClassName("tab-contents");
+
+function openTab(event, tabname) {
+  for (let tablink of tabLinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (let tabContent of tabContents) {
+    tabContent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+    
+</body>
+</html>
