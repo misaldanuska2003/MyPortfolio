@@ -573,4 +573,107 @@ background: linear-gradient(to top, rgba(0, 200, 100, 0.6), rgba(0, 0, 0, 0.2));
   object-fit: contain;
   display: block;
 }
+/* From Uiverse.io by satyamchaudharydev */ 
+a.button {
+  --width: 150px;
+  --height: 45px;
+  --tooltip-height: 35px;
+  --tooltip-width: 120px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #1163ff;
+  --tooltip-color: #fff;
+  display: inline-block;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  transition: background 0.3s;
+}
 
+a.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+a.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+a.button::before,
+a.button::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.button-wrapper, .text, .icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  transition: top 0.5s;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 100%;
+  transition: top 0.5s;
+}
+
+a.button:hover {
+  background: #6c18ff;
+}
+
+a.button:hover .text {
+  top: -100%;
+}
+
+a.button:hover .icon {
+  top: 0;
+}
+
+a.button:hover::before,
+a.button:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+a.button:hover::after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+a.button:hover::before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
