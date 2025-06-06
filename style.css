@@ -747,3 +747,7 @@ button:active {
     transform: translateY(-0.1em);
   }
 }
+
+@media only screen and (max-width:600px){
+  
+}
