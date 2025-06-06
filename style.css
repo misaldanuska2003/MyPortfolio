@@ -748,6 +748,117 @@ button:active {
   }
 }
 
-@media only screen and (max-width:600px){
-  
+@media (max-width: 768px) {
+  .container {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .header-text {
+    margin-top: 30%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 36px;
+  }
+
+  .header-text p {
+    font-size: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-col-1, .about-col-2 {
+    flex: 1 1 100%;
+    padding: 0 10px;
+  }
+
+  #my-image {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+  }
+
+  .tab-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .work-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .animated-button {
+    margin-left: 0;
+    margin: 20px auto;
+  }
+
+  .social-buttons {
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  form input, form textarea {
+    font-size: 16px;
+  }
+
+  button span {
+    display: none;
+  }
 }
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 28px;
+  }
+
+  .header-text p {
+    font-size: 18px;
+  }
+
+  .tab-link {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .services-list div {
+    padding: 20px;
+  }
+
+  .layer h3 {
+    font-size: 18px;
+  }
+
+  .layer p {
+    font-size: 12px;
+  }
+
+  .social-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  form input, form textarea {
+    padding: 12px;
+  }
+}
+
+
