@@ -924,7 +924,7 @@ nav ul img{
   .layer p {
     font-size: 12px;
   }
-
+c
   .social-button {
     width: 40px;
     height: 40px;
@@ -940,7 +940,7 @@ nav ul img{
   left: 0;
   width: 220px;
   height: 100vh;
-  background: #0a4933;
+  background: #011504b4;
   box-shadow: 2px 0 8px rgba(0,0,0,0.1);
   transition: left 0.3s;
   z-index: 1001;
