@@ -11,17 +11,16 @@
     <div class="container">
         <nav>
     <img src="images/icons8-menu-50.png" alt="Open Menu" id="buttonOpen" >
-    
-    <ul id="sidebarItem">
+    <ul id="sidebarItem" class="collapsed">
       <li><a href="#">Home</a></li>
       <li><a href="#">Projects</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Service</a></li>
       <li>
-        <img src="images/icons8-cancel-24.png" alt="Close Menu" onclick="closeMenu()">
+        <img src="images/icons8-cancel-24.png" alt="Close Menu" id="buttonClose">
       </li>
     </ul>
-  </nav> 
+</nav> 
     </div>
     </div>
     <div class="container">
@@ -318,13 +317,17 @@ function openTab(event, tabname) {
     // function closeMenu() {
     //   sidebar.style.right = "-200px";
     // }
-var sideB=document.getElementById("sidebarItem");
-var btn=document.getElementById("buttonOpen");
+var sideB = document.getElementById("sidebarItem");
+var btn = document.getElementById("buttonOpen");
+var btnClose = document.getElementById("buttonClose");
 
-btn.addEventListener('click',()=>{
-  sideB.classList.toggle('collapsed');
-})
-
+// Remove previous listeners if any
+btn.onclick = function() {
+  sideB.classList.remove('collapsed');
+};
+btnClose.onclick = function() {
+  sideB.classList.add('collapsed');
+};
   </script>
     
 </body>
