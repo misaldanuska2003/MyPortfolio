@@ -755,10 +755,23 @@ button:active {
     align-items: center;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+  justify-content: flex-start;
+  background-color: #338a6c;
+  width: 200px;
+  height: 100vh;
+  padding-top: 20px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+  nav ul li{
+    display: block;
+    margin: 25px;
   }
 
   .header-text {
