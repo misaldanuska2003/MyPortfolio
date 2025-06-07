@@ -9,14 +9,19 @@
 <body >
     <div id="header">
     <div class="container">
-       <nav><ul>
-    <li> <a href="#">Home</a> </li>
-    <li><a href="">Projects</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Service</a></li>
-</ul>
-<img src="images/icons8-menu-50.png" alt="">
-</nav> 
+        <nav>
+    <img src="images/icons8-menu-50.png" alt="Open Menu" id="buttonOpen" >
+    
+    <ul id="sidebarItem">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li>
+        <img src="images/icons8-cancel-24.png" alt="Close Menu" onclick="closeMenu()">
+      </li>
+    </ul>
+  </nav> 
     </div>
     </div>
     <div class="container">
@@ -303,6 +308,24 @@ function openTab(event, tabname) {
 
 
 </script>
+
+  <script>
+    // var sidebar = document.querySelector("nav ul");
+    // function openMenu() {
+    //   sidebar.style.right = "0px";
+    // }
+
+    // function closeMenu() {
+    //   sidebar.style.right = "-200px";
+    // }
+var sideB=document.getElementById("sidebarItem");
+var btn=document.getElementById("buttonOpen");
+
+btn.addEventListener('click',()=>{
+  sideB.classList.toggle('collapsed');
+})
+
+  </script>
     
 </body>
 </html>
