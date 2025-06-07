@@ -9,19 +9,26 @@ body {
   background-color: #1a1a1a; 
 }
 
-/* #header {
-  
+/* Header styles */
+#header {
   position: fixed;
-  background-color: #11182789;
-  padding: 2%;
-  color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.41);
+  top: 0;
+  left: 0;
   width: 100%;
-} */
-/* #header{
-   position: fixed;
+  background-color: #111827e6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.41);
+  z-index: 1100;
+}
 
-} */
+#header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+}
 
 .container {
   max-width: 1200px;
@@ -29,24 +36,73 @@ body {
   padding: 16px 20px;
   justify-content: flex-end;
 }
+/* #header .collapsed{
+  background-color: #0077b5;
+} */
 
-
-nav ul {
-  padding: 4%;
-  position: fixed;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 48px;
-    top: 0;
+#sidebarItem {
+  top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 60px;
-  background-color: #11182789;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.41);
+  background: transparent;
+  box-shadow: none;
   color: white;
   z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  transition: none;
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
+nav img {
+  display: none;
+}
+#sidebarItem li {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+#sidebarItem li:last-child {
+  display: none; /* Hide close button on desktop */
+}
+
+#sidebarItem li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: color 0.3s;
+}
+
+/* #sidebarItem li a:hover {
+  color: #06b6d4;
+} */
+/* #sidebarItem {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #011504b4;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  transition: left 0.3s;
+  z-index: 1001;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+} */
 
 nav ul li a {
   color: white;
@@ -750,6 +806,7 @@ button:active {
 nav img{
   display: none;
 }
+
 @media (max-width: 768px) {
   * {
   margin: 0;
@@ -781,13 +838,13 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
   }
-#sidebarItem {
+/* #sidebarItem {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #0a4933;
+  background-color: #490a13;
   width: 200px;
   height: 100vh;
   padding-top: 20px 0 0 0;
@@ -797,7 +854,7 @@ html, body {
   padding-top: 38%;
   left: -200px;
   
-}
+} */
     /* nav ul {
       position: fixed;
       top: 0;
@@ -819,9 +876,9 @@ html, body {
     } */
 
 nav ul img{
-  position: absolute;
-  top:15px;
-  margin-left: 10%;
+  position: relative;
+  top:8px;
+  margin-left: 60%;
 }
   nav img {
     display: block;
@@ -924,7 +981,7 @@ nav ul img{
   .layer p {
     font-size: 12px;
   }
-c
+
   .social-button {
     width: 40px;
     height: 40px;
@@ -934,7 +991,7 @@ c
     padding: 12px;
   }
 }
-#sidebarItem {
+/* #sidebarItem {
   position: fixed;
   top: 0;
   left: 0;
@@ -951,10 +1008,57 @@ c
   align-items: flex-start;
   justify-content: flex-start;
   list-style: none;
-}
+} */
 
 #sidebarItem.collapsed {
   left: -240px;
+  transition: left 0.3s;
+}
+@media (max-width: 768px) {
+  #header {
+    position: static;
+    box-shadow: none;
+  }
+  #header .container {
+    padding: 0;
+  }
+  nav {
+    width: 100%;
+  }
+  #sidebarItem {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 220px;
+    height: 100vh;
+    background: #011504b4;
+    top: 0;
+    left: -240px;
+    padding: 60px 0 0 0;
+    gap: 16px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    transition: left 0.3s;
+  }
+  #sidebarItem li {
+    display: block;
+    margin: 25px 20px;
+  }
+  #sidebarItem li:last-child {
+    display: block; /* Show close button on mobile */
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  #sidebarItem:not(.collapsed) {
+    left: 0;
+  }
+  /* nav img#buttonOpen {
+    display: block;
+    position: relative;
+    top: 12px;
+    left: 16px;
+    z-index: 1200;
+  } */
 }
 
 
