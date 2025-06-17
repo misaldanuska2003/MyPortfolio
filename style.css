@@ -147,7 +147,7 @@ span{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start; /* Align children to the top */
 }
 
 .about-col-1 img{
@@ -156,8 +156,9 @@ span{
 }
 .about-col-1, .about-col-2 {
   flex: 1 1 45%;
+  /* Remove align-items: center; if present */
 }
-#my-image {
+#my-image, img[src="images/aiease_1748765276929.jpg"] {
   width: 500px;
   height: 500px;
   border-radius: 3%;       
@@ -166,6 +167,7 @@ span{
     0 0 40px rgba(255, 165, 0, 0.3), /* Orange */
     0 0 80px rgba(0, 255, 255, 0.2), /* Cyan */
     0 0 100px rgba(128, 0, 255, 0.2); /* Purple */
+  object-fit: cover;
 }
 
 .about-col-2 p {
