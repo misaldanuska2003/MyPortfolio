@@ -1067,7 +1067,10 @@ nav ul img{
   .layer p {
     font-size: 12px;
   }
-
+.BtnWhatsApp{
+  width: 40px;
+  height: 40px;
+}
   .social-button {
     width: 40px;
     height: 40px;
