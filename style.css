@@ -805,6 +805,81 @@ button:active {
   transform: scale(0.95);
 }
 
+/* whatsApp btn*/ 
+.BtnWhatsApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #00d757;
+  margin-left: 10px;
+}
+
+.signWhatsApp {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signWhatsApp svg {
+  width: 25px;
+  display: flex;
+}
+
+.signWhatsApp svg path {
+  fill: white;
+}
+.BtnWhatsAppText {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  
+}
+
+.BtnWhatsApp:hover {
+  width: 150px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.BtnWhatsApp:hover .signWhatsApp {
+  transition-duration: 0.3s;
+  margin-left: 12px;
+  justify-content: flex-start;
+}
+
+.BtnWhatsApp:hover .BtnWhatsAppText {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+.BtnWhatsApp:active {
+  transform: translate(2px, 2px);
+}
+
+
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
