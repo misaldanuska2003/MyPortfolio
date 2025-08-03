@@ -380,6 +380,7 @@ background: linear-gradient(to top, rgba(0, 200, 100, 0.6), rgba(0, 0, 0, 0.2));
 .work:hover .layer{
   height: 100%;
 } */
+ /* cards-projects------------------------------------ */
 .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -396,12 +397,31 @@ background: linear-gradient(to top, rgba(0, 200, 100, 0.6), rgba(0, 0, 0, 0.2));
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+#extra-projects{
+  display: none;
+}
+#disabled-card{
+  opacity: 0.3;
+  pointer-events: none;
+
+}
+
 .background-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
+/* #extraProjects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  gap: 20%;
+} */
 
 .layer {
   position: absolute;

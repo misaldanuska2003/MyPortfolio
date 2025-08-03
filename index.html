@@ -162,7 +162,11 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
               </div>
 
         </div> -->
-    <div class="work-list">
+        <div class="container">
+          
+      
+            <div class="work-list">
+
   <div class="work">
     <div class="layer">
       <h3>Pizza Oder App (On Going)</h3>
@@ -189,9 +193,75 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
   </div>
 
 
+
+
+</div>
+  
+            <div class="work-list" id="extra-projects">
+
+ 
+  <div class="work" >
+    <div class="layer">
+      <h3>Red POS Landing Page</h3>
+      <p>Simplify your sales and manage your business smarter with our modern POS solution – built for efficiency and growth.</p>
+      <a href="https://www.figma.com/proto/QOSdQ8peZlEy24eLoP8Zqx/RED-POS--Home-page-?node-id=108-127&t=Qu64VDwBY9vTqLXn-1&scaling=min-zoom&content-scaling=fixed&page-id=38%3A2"><span>&#8599;</span></a>
+    </div>
+    <img src="images/REDPOS.jpeg" alt="" class="background-image" />
+  </div> 
+  <div class="work" id="disabled-card">
+    <div class="layer">
+      <h3>E-Commerce Site (On Going)</h3>
+      <p>The app connects you to the talented people around the world</p>
+      <a href="https://www.figma.com/proto/Tljvu6itgStVOyVSWbKrme/Untitled?node-id=67-64&starting-point-node-id=67%3A64"><span>&#8599;</span></a>
+    </div>
+    <img src="images/disabledProjectImage.jpg" alt="" class="background-image" />
+  </div>
+ 
+ <div class="work" id="disabled-card">
+    <div class="layer">
+      <h3>Pizza Oder App (On Going)</h3>
+      <p>The app connects you to the talented people around the world. Download it from play store.</p>
+      <a href="https://www.figma.com/proto/mT0jDhN2S9HgNw3RZkNUeC/PizzaShopApp?node-id=10-408&starting-point-node-id=10%3A408"><span>&#8599;</span></a>
+    </div>
+    <img src="images/disabledProjectImage.jpg" alt="" class="background-image" />
+  </div>
+
+
+
+</div>
+
+  </div>
+
+  <!-- <div class="row"> -->
+      <!-- <div class="work">
+    <div class="layer">
+      <h3>Pizza Oder App (On Going)</h3>
+      <p>The app connects you to the talented people around the world. Download it from play store.</p>
+      <a href="https://www.figma.com/proto/mT0jDhN2S9HgNw3RZkNUeC/PizzaShopApp?node-id=10-408&starting-point-node-id=10%3A408"><span>&#8599;</span></a>
+    </div>
+    <img src="images/image.png" alt="" class="background-image" />
+  </div> -->
+  <!-- <div class="work">
+    <div class="layer">
+      <h3>E-Commerce Site (On Going)</h3>
+      <p>The app connects you to the talented people around the world</p>
+      <a href="https://www.figma.com/proto/Tljvu6itgStVOyVSWbKrme/Untitled?node-id=67-64&starting-point-node-id=67%3A64"><span>&#8599;</span></a>
+    </div>
+    <img src="images/mockuuups-macbook-pro-mockup-on-an-office-desk.jpeg" alt="" class="background-image" />
+  </div> -->
+  <!-- <div class="work">
+    <div class="layer">
+      <h3>Company Website</h3>
+      <p>The website connects you to the talented people around the world</p>
+      <a href="https://www.figma.com/proto/fIJCDI9w6VrQpGCnOXLBhw/LAB-A?node-id=31-13&p=f&t=5yIVTXdDBsuOkt6I-1&scaling=min-zoom&content-scaling=fixed&page-id=31%3A12"><span>&#8599;</span></a>
+    </div>
+    <img src="images/CompanyWebsite2.jpeg" alt="" class="background-image" />
+  </div>
+  </div> -->
+
 </div>
   <!-- ------btn----- -->
-<button class="animated-button">
+<button class="animated-button" id="seeMore">
   
   <span class="text">See more...</span>
   <span class="circle"></span>
@@ -341,17 +411,6 @@ function openTab(event, tabname) {
 }
 
 
-</script>
-
-  <script>
-    // var sidebar = document.querySelector("nav ul");
-    // function openMenu() {
-    //   sidebar.style.right = "0px";
-    // }
-
-    // function closeMenu() {
-    //   sidebar.style.right = "-200px";
-    // }
 var sideB = document.getElementById("sidebarItem");
 var btn = document.getElementById("buttonOpen");
 var btnClose = document.getElementById("buttonClose");
@@ -373,7 +432,14 @@ btnClose.onclick = function() {
    window.open(url, '_blank');
  });
 
-
+document.getElementById("seeMore").addEventListener("click",function(){
+  const extraProject=document.getElementById("extra-projects");
+  if(extraProject.style.display==="none" || extraProject.style.display===""){
+    extraProject.style.display="flex";
+  }else{
+    extraProject.style.display="none";
+  }
+});
 
   </script>
     
