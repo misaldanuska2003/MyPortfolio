@@ -1,135 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    <div id="header">
+
+<body>
+  <div id="header">
     <div class="container">
-        <nav>
-    <img src="images/icons8-menu-50.png" alt="Open Menu" id="buttonOpen" >
-    <ul id="sidebarItem" class="collapsed">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <img src="images/icons8-cancel-24.png" alt="Close Menu" id="buttonClose">
-      </li>
-    </ul>
-</nav> 
+      <nav>
+        <img src="images/icons8-menu-50.png" alt="Open Menu" id="buttonOpen">
+        <ul id="sidebarItem" class="collapsed">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img src="images/icons8-cancel-24.png" alt="Close Menu" id="buttonClose">
+          </li>
+        </ul>
+      </nav>
     </div>
+  </div>
+  <div class="container">
+    <div class="header-text">
+      <p>UI/UX Designer<span> &</span> Front end Developer</p>
+      <h1>Hi, I'm <span>Misal Dhanuska</span>
+        <br>From Sri Lanka
+      </h1>
     </div>
-    <div class="container">
-      <div class="header-text">
-    <p>UI/UX Designer<span> &</span>   Front end Developer</p>
-    <h1>Hi, I'm <span>Misal Dhanuska</span>
-       <br>From Sri Lanka</h1>
-</div>  
-    </div>
+  </div>
   <div id="about">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img class="image-wrapper" id="my-image" src="images/aiease_1748765276929.jpg" alt="">
-            </div>
-            <div class="about-col-2">
-              <h1 class="tab-title">About me</h1>
-              <p>Hi, I’m Misal Dhanuska — a UI/UX Designer and Frontend Developer passionate about creating clean, modern digital experiences.
+      <div class="row">
+        <div class="about-col-1">
+          <img class="image-wrapper" id="my-image" src="images/aiease_1748765276929.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="tab-title">About me</h1>
+          <p>Hi, I’m Misal Dhanuska — a UI/UX Designer and Frontend Developer passionate about creating clean, modern
+            digital experiences.
 
-I design responsive interfaces in Figma and bring them to life with React, React Native, Vue.js, Angular, and Laravel. I focus on building intuitive, scalable web and mobile applications.
+            I design responsive interfaces in Figma and bring them to life with React, React Native, Vue.js, Angular,
+            and Laravel. I focus on building intuitive, scalable web and mobile applications.
 
-Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, specializing in frontend and user experience design.</p>
+            Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, specializing in frontend and user
+            experience design.</p>
           <div class="tab-links">
-  <p onclick="openTab(event,'skill')" class="tab-link active-link">Skills</p>
-  <p onclick="openTab(event,'experience')" class="tab-link">Experience</p>
-  <p onclick="openTab(event,'Education')" class="tab-link">Education</p>
-</div>
+            <p onclick="openTab(event,'skill')" class="tab-link active-link">Skills</p>
+            <p onclick="openTab(event,'experience')" class="tab-link">Experience</p>
+            <p onclick="openTab(event,'Education')" class="tab-link">Education</p>
+          </div>
           <div class="tab-contents active-tab" id="skill">
             <ul>
               <li><span>UI/UX Design</span><br>Figma <br>Wireframing & Prototyping
-              <br>Mobile & Web UI Design <br>Design Systems & Style Guides <br>
-              
-              
+                <br>Mobile & Web UI Design <br>Design Systems & Style Guides <br>
+
+
               </li>
               <li><span>Frontend Development</span><br>HTML5, CSS3, JavaScript (ES6+)
-              <br>React.js (⚡ Primary focus) <br>Vue.js <br>Angular <br>React Native <br>Tailwind CSS / Bootstrap
-              <br>Responsive & Mobile-first Design <br>REST APIs / JSON handling
+                <br>React.js (⚡ Primary focus) <br>Vue.js <br>Angular <br>React Native <br>Tailwind CSS / Bootstrap
+                <br>Responsive & Mobile-first Design <br>REST APIs / JSON handling
               </li>
               <li><span>Frameworks & Tools</span><br>React(⚡ Primary focus) ,React native,vue.js,Angular
-              <br>Git & GitHub <br>VS Code <br>NPM  <br>Vite
+                <br>Git & GitHub <br>VS Code <br>NPM <br>Vite
               </li>
               <li><span>Other Relevant Skills</span>
 
-              <br>Performance Optimization <br>Team Collaboration (Agile/Scrum)
+                <br>Performance Optimization <br>Team Collaboration (Agile/Scrum)
               </li>
             </ul>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>UI/UX Designer – Client Projects (Design Team Contributor) </span><br>Specialized in creating user-centric interface designs using Figma, with a strong emphasis on usability, accessibility, and visual consistency.
-              <br>Developed high-fidelity wireframes, interactive prototypes, and design systems for both web and mobile platforms.
-              <br>Worked closely with development teams to ensure smooth handoff and implementation of designs.
-              <br>Designed for a range of industries and client needs, always focusing on delivering intuitive and aesthetically pleasing user experiences.</li>
+              <li><span>UI/UX Designer – Client Projects (Design Team Contributor) </span><br>Specialized in creating
+                user-centric interface designs using Figma, with a strong emphasis on usability, accessibility, and
+                visual consistency.
+                <br>Developed high-fidelity wireframes, interactive prototypes, and design systems for both web and
+                mobile platforms.
+                <br>Worked closely with development teams to ensure smooth handoff and implementation of designs.
+                <br>Designed for a range of industries and client needs, always focusing on delivering intuitive and
+                aesthetically pleasing user experiences.
+              </li>
               <li><span>Intern Software Engineer</span><br>Red Code Solution Pvt Ltd | March 2025 – Present
-<br> Location: Remote
+                <br> Location: Remote
 
-<br>Working on front-end development for client-facing web applications with a strong focus on clean, responsive UI.
+                <br>Working on front-end development for client-facing web applications with a strong focus on clean,
+                responsive UI.
 
-<br>Collaborating with designers to accurately convert Figma layouts into functional, production-ready interfaces.
+                <br>Collaborating with designers to accurately convert Figma layouts into functional, production-ready
+                interfaces.
 
-<br>Using technologies like React, Tailwind CSS, and Git within an agile development process.
+                <br>Using technologies like React, Tailwind CSS, and Git within an agile development process.
 
-<br>Enhancing user experience by integrating modern design trends and maintaining consistent visual standards across projects.</li>
-              
+                <br>Enhancing user experience by integrating modern design trends and maintaining consistent visual
+                standards across projects.
+              </li>
+
 
             </ul>
           </div>
           <div class="tab-contents" id="Education">
             <ul>
-              <li><span>ICET Certified Developer Program (ICD Program)</span><br>Institute of Computer Engineering Technology (ICET)</li>
+              <li><span>ICET Certified Developer Program (ICD Program)</span><br>Institute of Computer Engineering
+                Technology (ICET)</li>
               <li><span>G.C.E. Ordinary Level Examination</span><br>Department of Examinations, Sri Lanka</li>
 
             </ul>
           </div>
-                </div>
         </div>
+      </div>
     </div>
-  </div> 
+  </div>
   <!-- ----------------------service---------------------  -->
-   <div id="services">
-   <div class="container">
-   <h1 class="sub-title" >My Services</h1>
-   <div class="services-list">
-    <div>
-      <h2>💡 UI/UX Design – Web & Mobile</h2>
-      <p>I craft clean, user-friendly interfaces using Figma, tailored for both websites and mobile apps. My focus is on creating intuitive layouts that improve user experience and align with your brand identity.</p>
-         <!-- <a href="#">learn more</a> -->
-    </div>
-    <div>
-      <h2>🎨 Prototype & Design System Creation</h2>
-      <p>From wireframes to interactive prototypes, I build consistent design systems that help your product scale. You'll receive organized Figma files ready for seamless developer handoff and team collaboration.
-</p>
-         <!-- <a href="#">learn more</a> -->
-    </div>
-    <div>
-      <h2>💻 Front-End Development</h2>
-      <p>I turn designs into responsive, pixel-perfect web pages using HTML, CSS, JavaScript, and React. With a focus on performance and mobile-first design, I ensure your app looks great and works smoothly on all devices.
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>💡 UI/UX Design – Web & Mobile</h2>
+          <p>I craft clean, user-friendly interfaces using Figma, tailored for both websites and mobile apps. My focus
+            is on creating intuitive layouts that improve user experience and align with your brand identity.</p>
+          <!-- <a href="#">learn more</a> -->
+        </div>
+        <div>
+          <h2>🎨 Prototype & Design System Creation</h2>
+          <p>From wireframes to interactive prototypes, I build consistent design systems that help your product scale.
+            You'll receive organized Figma files ready for seamless developer handoff and team collaboration.
+          </p>
+          <!-- <a href="#">learn more</a> -->
+        </div>
+        <div>
+          <h2>💻 Front-End Development</h2>
+          <p>I turn designs into responsive, pixel-perfect web pages using HTML, CSS, JavaScript, and React. With a
+            focus on performance and mobile-first design, I ensure your app looks great and works smoothly on all
+            devices.
 
-</p>
-         <!-- <a href="#">learn more</a> -->
+          </p>
+          <!-- <a href="#">learn more</a> -->
+        </div>
+      </div>
     </div>
-   </div>
-   </div>
-   </div>
-   <!-- ----------------------portfolio--------------------- -->
-    <div id="portfolio">
-        <div class="container">
-             <h1 class="sub-title" >My Work</h1>
-             <!-- <div class="work-list">
+  </div>
+  <!-- ----------------------portfolio--------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <!-- <div class="work-list">
               <div class="work">
                 <div class="layer">
                 <img src="images/image.png" alt="" class="background-image">
@@ -162,77 +182,84 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
               </div>
 
         </div> -->
-        <div class="container">
-          
-      
-            <div class="work-list">
-
-  <div class="work">
-    <div class="layer">
-      <h3>Pizza Oder App (On Going)</h3>
-      <p>The app connects you to the talented people around the world. Download it from play store.</p>
-      <a href="https://www.figma.com/proto/mT0jDhN2S9HgNw3RZkNUeC/PizzaShopApp?node-id=10-408&starting-point-node-id=10%3A408"><span>&#8599;</span></a>
-    </div>
-    <img src="images/image.png" alt="" class="background-image" />
-  </div>
-  <div class="work">
-    <div class="layer">
-      <h3>E-Commerce Site (On Going)</h3>
-      <p>The app connects you to the talented people around the world</p>
-      <a href="https://www.figma.com/proto/Tljvu6itgStVOyVSWbKrme/Untitled?node-id=67-64&starting-point-node-id=67%3A64"><span>&#8599;</span></a>
-    </div>
-    <img src="images/mockuuups-macbook-pro-mockup-on-an-office-desk.jpeg" alt="" class="background-image" />
-  </div>
-  <div class="work">
-    <div class="layer">
-      <h3>Company Website</h3>
-      <p>The website connects you to the talented people around the world</p>
-      <a href="https://www.figma.com/proto/fIJCDI9w6VrQpGCnOXLBhw/LAB-A?node-id=31-13&p=f&t=5yIVTXdDBsuOkt6I-1&scaling=min-zoom&content-scaling=fixed&page-id=31%3A12"><span>&#8599;</span></a>
-    </div>
-    <img src="images/CompanyWebsite2.jpeg" alt="" class="background-image" />
-  </div>
+      <div class="container">
 
 
+        <div class="work-list">
 
-
-</div>
-  
-            <div class="work-list" id="extra-projects">
-
- 
-  <div class="work" >
-    <div class="layer">
-      <h3>Red POS Landing Page</h3>
-      <p>Simplify your sales and manage your business smarter with our modern POS solution – built for efficiency and growth.</p>
-      <a href="https://www.figma.com/proto/QOSdQ8peZlEy24eLoP8Zqx/RED-POS--Home-page-?node-id=108-127&t=Qu64VDwBY9vTqLXn-1&scaling=min-zoom&content-scaling=fixed&page-id=38%3A2"><span>&#8599;</span></a>
-    </div>
-    <img src="images/REDPOS.jpeg" alt="" class="background-image" />
-  </div> 
-  <div class="work" id="disabled-card">
-    <div class="layer">
-      <h3>E-Commerce Site (On Going)</h3>
-      <p>The app connects you to the talented people around the world</p>
-      <a href="https://www.figma.com/proto/Tljvu6itgStVOyVSWbKrme/Untitled?node-id=67-64&starting-point-node-id=67%3A64"><span>&#8599;</span></a>
-    </div>
-    <img src="images/disabledProjectImage.jpg" alt="" class="background-image" />
-  </div>
- 
- <div class="work" id="disabled-card">
-    <div class="layer">
-      <h3>Pizza Oder App (On Going)</h3>
-      <p>The app connects you to the talented people around the world. Download it from play store.</p>
-      <a href="https://www.figma.com/proto/mT0jDhN2S9HgNw3RZkNUeC/PizzaShopApp?node-id=10-408&starting-point-node-id=10%3A408"><span>&#8599;</span></a>
-    </div>
-    <img src="images/disabledProjectImage.jpg" alt="" class="background-image" />
-  </div>
+          <div class="work">
+            <div class="layer">
+              <h3>Pizza Oder App (On Going)</h3>
+              <p>The app connects you to the talented people around the world. Download it from play store.</p>
+              <a
+                href="https://www.figma.com/proto/mT0jDhN2S9HgNw3RZkNUeC/PizzaShopApp?node-id=10-408&starting-point-node-id=10%3A408"><span>&#8599;</span></a>
+            </div>
+            <img src="images/image.png" alt="" class="background-image" />
+          </div>
+          <div class="work">
+            <div class="layer">
+              <h3>E-Commerce Site (On Going)</h3>
+              <p>The app connects you to the talented people around the world</p>
+              <a
+                href="https://www.figma.com/proto/Tljvu6itgStVOyVSWbKrme/Untitled?node-id=67-64&starting-point-node-id=67%3A64"><span>&#8599;</span></a>
+            </div>
+            <img src="images/mockuuups-macbook-pro-mockup-on-an-office-desk.jpeg" alt="" class="background-image" />
+          </div>
+          <div class="work">
+            <div class="layer">
+              <h3>Company Website</h3>
+              <p>The website connects you to the talented people around the world</p>
+              <a
+                href="https://www.figma.com/proto/fIJCDI9w6VrQpGCnOXLBhw/LAB-A?node-id=31-13&p=f&t=5yIVTXdDBsuOkt6I-1&scaling=min-zoom&content-scaling=fixed&page-id=31%3A12"><span>&#8599;</span></a>
+            </div>
+            <img src="images/CompanyWebsite2.jpeg" alt="" class="background-image" />
+          </div>
 
 
 
-</div>
 
-  </div>
+        </div>
 
-  <!-- <div class="row"> -->
+        <div class="work-list" id="extra-projects">
+
+
+          <div class="work">
+            <div class="layer">
+              <h3>Red POS Landing Page</h3>
+              <p>Simplify your sales and manage your business smarter with our modern POS solution – built for
+                efficiency and growth.</p>
+              <a
+                href="https://www.figma.com/proto/QOSdQ8peZlEy24eLoP8Zqx/RED-POS--Home-page-?node-id=108-127&t=Qu64VDwBY9vTqLXn-1&scaling=min-zoom&content-scaling=fixed&page-id=38%3A2"><span>&#8599;</span></a>
+            </div>
+            <img src="images/REDPOS.jpeg" alt="" class="background-image" />
+          </div>
+          <div class="work" >
+            <div class="layer">
+              <h3>Animated Homepage Design</h3>
+              <p>Figma homepage design with smooth animations, showcasing a luxury wrist watch brand in a clean and modern style.</p>
+              <a
+                href="https://www.figma.com/proto/T5qkyBmy8Ws1I542dToks6/Untitled?node-id=135-2"><span>&#8599;</span></a>
+            </div>
+            <img src="images/AnimationSite.jpeg" alt="" class="background-image" />
+          </div>
+
+          <div class="work" id="disabled-card">
+            <div class="layer">
+              <h3>Pizza Oder App (On Going)</h3>
+              <p>The app connects you to the talented people around the world. Download it from play store.</p>
+              <a
+                href="https://www.figma.com/proto/mT0jDhN2S9HgNw3RZkNUeC/PizzaShopApp?node-id=10-408&starting-point-node-id=10%3A408"><span>&#8599;</span></a>
+            </div>
+            <img src="images/disabledProjectImage.jpg" alt="" class="background-image" />
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+      <!-- <div class="row"> -->
       <!-- <div class="work">
     <div class="layer">
       <h3>Pizza Oder App (On Going)</h3>
@@ -241,7 +268,7 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
     </div>
     <img src="images/image.png" alt="" class="background-image" />
   </div> -->
-  <!-- <div class="work">
+      <!-- <div class="work">
     <div class="layer">
       <h3>E-Commerce Site (On Going)</h3>
       <p>The app connects you to the talented people around the world</p>
@@ -249,7 +276,7 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
     </div>
     <img src="images/mockuuups-macbook-pro-mockup-on-an-office-desk.jpeg" alt="" class="background-image" />
   </div> -->
-  <!-- <div class="work">
+      <!-- <div class="work">
     <div class="layer">
       <h3>Company Website</h3>
       <p>The website connects you to the talented people around the world</p>
@@ -259,77 +286,86 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
   </div>
   </div> -->
 
-</div>
-  <!-- ------btn----- -->
-<button class="animated-button" id="seeMore">
-  
-  <span class="text">See more...</span>
-  <span class="circle"></span>
-  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-    ></path>
-  </svg>
-</button>
-</div>
-</div>
-<!-- ----------------------Contact--------------------- -->
-   <!-- https://www.linkedin.com/in/misal-danuska-1ab45a330/ 
+    </div>
+    <!-- ------btn----- -->
+    <button class="animated-button" id="seeMore">
+
+      <span class="text">See more...</span>
+      <span class="circle"></span>
+      <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+        </path>
+      </svg>
+    </button>
+  </div>
+  </div>
+  <!-- ----------------------Contact--------------------- -->
+  <!-- https://www.linkedin.com/in/misal-danuska-1ab45a330/ 
    https://github.com/misaldanuska2003   -->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <div class="contact-details">
-        <p><img src="images/icons8-email-64.png" alt="">misaldanuska@gmail.com</p>
-        <p><img src="images/icons8-telephone-50.png" alt="">+94 710180435</p></div>
-        <div class="social-icons">
-<!-- From Uiverse.io by aadium --> 
-<div class="social-buttons">
-  <a href="https://github.com/misaldanuska2003" class="social-button github">
-    <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19"><path d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"></path></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/misal-danuska-1ab45a330/" class="social-button linkedin">
-        <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="Icons" stroke="none" stroke-width="1">
-            <g transform="translate(-702.000000, -265.000000)">
-                <path d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z" id="LinkedIn">
-    </path>
-            </g>
-        </g>
-    </svg>
-  </a>
-  <a href="#" class="social-button facebook">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
-<g id="XMLID_834_">
-  <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="contact-details">
+            <p><img src="images/icons8-email-64.png" alt="">misaldanuska@gmail.com</p>
+            <p><img src="images/icons8-telephone-50.png" alt="">+94 710180435</p>
+          </div>
+          <div class="social-icons">
+            <!-- From Uiverse.io by aadium -->
+            <div class="social-buttons">
+              <a href="https://github.com/misaldanuska2003" class="social-button github">
+                <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
+                  <path
+                    d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/misal-danuska-1ab45a330/" class="social-button linkedin">
+                <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Icons" stroke="none" stroke-width="1">
+                    <g transform="translate(-702.000000, -265.000000)">
+                      <path
+                        d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                        id="LinkedIn">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="social-button facebook">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                  <g id="XMLID_834_">
+                    <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
     c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
     V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
     C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
     c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path>
-</g>
-</svg>
-  </a>
-<!-- Btn whatsApp --> 
-<buttonWht class="BtnWhatsApp" id="whatsapp-btn">
-  <div class="signWhatsApp">
-    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
-      <path
-        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
-      ></path>
-    </svg>
-  </div>
+                  </g>
+                </svg>
+              </a>
+              <!-- Btn whatsApp -->
+              <buttonWht class="BtnWhatsApp" id="whatsapp-btn">
+                <div class="signWhatsApp">
+                  <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                    </path>
+                  </svg>
+                </div>
 
-  <div class="BtnWhatsAppText">Whatsapp</div>
-</buttonWht>
+                <div class="BtnWhatsAppText">Whatsapp</div>
+              </buttonWht>
 
-</div>
-<!-- ****-----***** -->
+            </div>
+            <!-- ****-----***** -->
 
-        </div>
-    <!-- Download CV Button -->
-<!-- <div href="images/MisalDhanuskaResume%20(2).pdf%20(1).pdf.pdf"  class="button" data-tooltip="Download my CV">
+          </div>
+          <!-- Download CV Button -->
+          <!-- <div href="images/MisalDhanuskaResume%20(2).pdf%20(1).pdf.pdf"  class="button" data-tooltip="Download my CV">
   <div class="button-wrapper">
     <adownload class="text">
       Download CV
@@ -346,102 +382,96 @@ Currently, I’m an Intern Software Developer at Redcode Solution Pvt Ltd, speci
 </div>    
 </div> -->
 
-<a href="images/Misal Dhanuska (UIUX Designer)CV.pdf.pdf" 
-   download 
-   class="button" 
-   data-tooltip="Download my CV">
-  <div class="button-wrapper">
-    <div class="text">Download CV</div>
-    <span class="icon">
-      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em"
-        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
-        </path>
-      </svg>
-    </span>
-  </div>
-</a>
+          <a href="images/Misal Dhanuska (UIUX Designer)CV.pdf.pdf" download class="button"
+            data-tooltip="Download my CV">
+            <div class="button-wrapper">
+              <div class="text">Download CV</div>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em"
+                  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                  </path>
+                </svg>
+              </span>
+            </div>
+          </a>
 
+        </div>
+        <div class="contact-right">
+          <form action="https://formsubmit.co/misaldanuska@gmail.com" method="POST">
+            <input type="text" name="Name" placeholder="Your Name">
+            <input type="email" name="Email" placeholder="Your Email">
+            <textarea name="Message" id="" placeholder="Your Message"></textarea>
+            <!-- From Uiverse.io by adamgiebl -->
+            <button>
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send</span>
+            </button>
+
+          </form>
+        </div>
+      </div>
     </div>
-      <div class="contact-right">
-        <form  action="https://formsubmit.co/misaldanuska@gmail.com" method="POST">
-    <input type="text" name="Name" placeholder="Your Name">
-    <input type="email" name="Email" placeholder="Your Email">
-    <textarea name="Message" id="" placeholder="Your Message"></textarea>
-  <!-- From Uiverse.io by adamgiebl --> 
-<button>
-  <div class="svg-wrapper-1">
-    <div class="svg-wrapper">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="24"
-        height="24"
-      >
-        <path fill="none" d="M0 0h24v24H0z"></path>
-        <path
-          fill="currentColor"
-          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-        ></path>
-      </svg>
-    </div>
-  </div>
-  <span>Send</span>
-</button>
 
-  </form>
-  </div>
-  </div>
-</div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-link");
+      var tabContents = document.getElementsByClassName("tab-contents");
 
-<script>
-var tabLinks = document.getElementsByClassName("tab-link");
-var tabContents = document.getElementsByClassName("tab-contents");
-
-function openTab(event, tabname) {
-  for (let tablink of tabLinks) {
-    tablink.classList.remove("active-link");
-  }
-  for (let tabContent of tabContents) {
-    tabContent.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
-}
+      function openTab(event, tabname) {
+        for (let tablink of tabLinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
 
 
-var sideB = document.getElementById("sidebarItem");
-var btn = document.getElementById("buttonOpen");
-var btnClose = document.getElementById("buttonClose");
+      var sideB = document.getElementById("sidebarItem");
+      var btn = document.getElementById("buttonOpen");
+      var btnClose = document.getElementById("buttonClose");
 
-// Remove previous listeners if any
-btn.onclick = function() {
-  sideB.classList.remove('collapsed');
-};
-btnClose.onclick = function() {
-  sideB.classList.add('collapsed');
-};
+      // Remove previous listeners if any
+      btn.onclick = function () {
+        sideB.classList.remove('collapsed');
+      };
+      btnClose.onclick = function () {
+        sideB.classList.add('collapsed');
+      };
 
 
- document.getElementById("whatsapp-btn").addEventListener("click", function (e) {
-   e.preventDefault();
-   const phoneNumber = "+94714093004"; // Replace with your number
-   const message = "Hi! I'm contacting you from your portfolio website.";
-   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-   window.open(url, '_blank');
- });
+      document.getElementById("whatsapp-btn").addEventListener("click", function (e) {
+        e.preventDefault();
+        const phoneNumber = "+94714093004"; // Replace with your number
+        const message = "Hi! I'm contacting you from your portfolio website.";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+      });
 
-document.getElementById("seeMore").addEventListener("click",function(){
-  const extraProject=document.getElementById("extra-projects");
-  if(extraProject.style.display==="none" || extraProject.style.display===""){
-    extraProject.style.display="flex";
-  }else{
-    extraProject.style.display="none";
-  }
-});
+      document.getElementById("seeMore").addEventListener("click", function () {
+        const extraProject = document.getElementById("extra-projects");
+        if (extraProject.style.display === "none" || extraProject.style.display === "") {
+          extraProject.style.display = "flex";
+        } else {
+          extraProject.style.display = "none";
+        }
+      });
 
-  </script>
-    
+    </script>
+
 </body>
+
 </html>
